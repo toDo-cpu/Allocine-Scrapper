@@ -6,35 +6,40 @@ Allocine is a French cinema company.
 On their website you can book places for movies or add comments on the movies you have seen
 
 ## Projet structure
-
-**Allocine-Scrapper**
-    **(Corpus)**
-    **Label** 
-        **first_label.txt**
-        **label.txt**
-        **second_label.txt**
-    **crawler**
-        **compteur.txt**
-        **first_crawl.js**
-        **second_crawl.js**
-    **lib**
-        **crawling**
-            **find_all_comment_page.js**
-            **parser.js**
-            **save.js**
-        **scraping**
-            **extract_comments_page.js**
-            **extract_id.js**
-            **extract_id_page.js**
-            **parse.js**
-        **asyncloop.js**
-        **extract_links.js**
-        **get_http.js**
-        **waitFor.js**
-    **scrapper**
-        **initialize.js**
-        **scraping.js** 
-
+````
+Allocine-Scrapper
+ |__(Corpus)
+ |
+ |__Label 
+ |  |__first_label.txt
+ |  |__label.txt
+ |  |__second_label.txt
+ |
+ |__crawler**
+ |  |__compteur.txt
+ |  |__first_crawl.js
+ |  |__second_crawl.js
+ |
+ |__lib
+ |  |__crawling
+ |  |  |__find_all_comment_page.js
+ |  |  |__parser.js    
+ |  |  |__save.js
+ |  |
+ |  |__scraping
+ |  |  |__extract_comments_page.js
+ |  |  |__extract_id.js
+ |  |  |__extract_id_page.js
+ |  |  |__parse.js
+ |  |
+ |  |__asyncloop.js
+ |  |__extract_links.js
+ |  |__get_http.js
+ |  |__waitFor.js
+ |__scrapper
+    |__initialize.js    
+    |__scraping.js
+````
 For the corpus file go to the next section.
 
 Label File contain the list of urls to get comments.
@@ -70,13 +75,18 @@ The structure of a file is :
 {
     data : [
         {
+            #First comment
             id_movie : 147423
             id_page : 2
             comments : the best movie
             stareval_note : 5.0
         },
         {
-
+            #Second comment
+            id_movie : 147423
+            id_page : 2
+            comments : very good movie
+            stareval_note : 4.5
         },.....     
     ]
 }
@@ -93,3 +103,6 @@ The number of movie will be increase ( the first crawl got only the 135 first mo
 ### Get the corpus 
 
 Go to <https://github.com/toDo-cpu/Movie-comments-rate-Corpus/tree/master
+
+
+If you want to contact me for more info add me on discord : Shimves#1131 or twitter @batr4cien
