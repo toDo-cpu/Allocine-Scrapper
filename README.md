@@ -103,6 +103,3 @@ The number of movie will be increase ( the first crawl got only the 135 first mo
 ### Get the corpus 
 
 Go to <https://github.com/toDo-cpu/Movie-comments-rate-Corpus/tree/master
-
-
-If you want to contact me for more info add me on discord : Shimves#1131 or twitter @batr4cien
